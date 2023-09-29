@@ -1,7 +1,8 @@
 #include "triangle.h"
 #include <iostream>
 
-Triangle::Triangle(double b, double h) : base(b), height(h) {}
+// Constructor definition with color parameter
+Triangle::Triangle(double b, double h, TriangleColor c) : base(b), height(h), color(c) {}
 
 double Triangle::area() {
     std::cout << "called area()\n";
@@ -16,5 +17,5 @@ void Triangle::display() {
     std::cout << "Base: " << base << " units" << std::endl;
     std::cout << "Height: " << height << " units" << std::endl;
     std::cout << "Area: " << area() << " square units" << std::endl;
-    std::cout << "?Hypot: " << hypot() << " units" << std::endl;
+    std::cout << "Hypot: " << hypot() << " units" << std::endl;
 }
